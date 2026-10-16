@@ -1,0 +1,6 @@
+# Run from the course folder (containing setup/):
+# python -m pip install -r setup/requirements.txt
+# Standalone requirements for setup and the first lab.
+numpy>=1.24
+matplotlib>=3.7
+jupyterlab>=4.0
