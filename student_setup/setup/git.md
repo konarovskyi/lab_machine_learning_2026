@@ -39,8 +39,9 @@ cp setup/check_setup.ipynb my-work/check_setup.ipynb
 Open `my-work/check_setup.ipynb` in Jupyter. Follow your chosen setup route
 to install packages using the original `setup/requirements.txt`.
 
-When a lab is released, copy its **whole folder**, including Python helpers,
-before starting it. For example, once `lab_01` is available:
+When a lab is released, copy its **whole folder** before starting it.
+Lab 1 contains the exercise PDF, notebook, and requirements file; it needs
+no Python helper files. Once `lab_01` is available:
 
 ```bash
 cp -R lab_01 my-work/

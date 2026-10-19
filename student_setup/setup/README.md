@@ -13,11 +13,13 @@ course. If you already have a working environment, keep it and run the checks.
 | 3. Google Colab | You prefer another browser-based environment and have a Google account. | [Upload and save notebooks](colab.md) |
 | 4. Nix | You already use Nix on an x86_64 Linux machine. | [Use the supplied flake](nix.md) |
 
-**For Lab 1:** Python 3.10 or later, NumPy, Matplotlib, and a Python notebook
-interface. A normal CPU is sufficient. You do not need to install PyTorch,
-CUDA, a GPU driver, or LaTeX before this class. Later lab instructions will
-announce additional packages when needed. Hosted services may use different
-package versions; the required checks are the same.
+**For Lab 1:** Python 3.10 or later, Matplotlib, **PyTorch 2.2 or later
+(within version 2)**, and a Python notebook interface. NumPy is also installed
+as part of this environment; no NumPy or PyTorch knowledge is assumed.
+All compulsory work runs on a normal CPU. A GPU, CUDA, a GPU driver, and LaTeX are unnecessary
+for this class. Use the installation instructions for your route below.
+Hosted services may use different package versions; the required checks
+are the same.
 
 ## 1. Get the files
 
@@ -48,7 +50,8 @@ The setup notebook is self-contained. No lab notebook or helper is needed yet.
 Follow your route above. In a Git checkout, copy `setup/check_setup.ipynb` into
 `my-work/check_setup.ipynb` and open that copy; create `my-work` first if needed.
 Select a Python kernel if prompted and run its cells using **Shift+Enter**.
-The notebook checks Python, NumPy, a matrix calculation, and a plot.
+The notebook checks the installed libraries, a small calculation with
+PyTorch tensors, a prediction and squared error, and a plot on the CPU.
 It installs nothing and does not contain lab exercises.
 
 You are ready when:
@@ -57,8 +60,10 @@ You are ready when:
 - you can see the plotted curve;
 - you can save your notebook copy and reopen it.
 
-The final PyTorch/CUDA section is **optional**. A message saying that PyTorch
-is absent or CUDA is unavailable does not prevent you from doing Lab 1.
+**PyTorch is required.** If its import or CPU checks fail, follow your route
+to install it or select the correct environment before class. The final
+optional GPU information is only a report: `CUDA available: False` is fine
+for Lab 1.
 
 ## 3. Know how to use a notebook
 
@@ -75,7 +80,9 @@ or the browser's HTML page.
 
 Before each class, obtain the latest materials as described in the Git guide.
 The corresponding lab folder will contain its exercise notebook and any
-companion files. Follow that lab's instructions when it is released.
+companion files. Lab 1 comes with an exercise PDF and a notebook containing
+examples, short tasks, and supplied code. It needs no helper files. Follow
+the exercise numbers in order and keep your explanations with your code.
 
 ## If something fails
 

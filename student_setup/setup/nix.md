@@ -27,15 +27,30 @@ nix --extra-experimental-features "nix-command flakes" develop
 jupyter lab
 ```
 
-The first run can take time while Nix obtains packages. The existing flake
-provides JupyterLab, ipykernel, NumPy, and Matplotlib. Use this environment
-directly; a separate `.venv` and pip installation are unnecessary for Lab 1.
+The first run can take time while Nix obtains packages. The default flake
+provides JupyterLab, ipykernel, NumPy, Matplotlib, and **CPU PyTorch**. Its
+package configuration explicitly disables CUDA and ROCm, so the standard
+shell does not request a CUDA/MAGMA build. Use this environment directly;
+a separate `.venv` and pip installation are unnecessary for Lab 1.
 Keep the supplied lock file so that the Nix input remains pinned. Do not run
 `nix flake update` as part of the student setup.
 
 After stopping JupyterLab, type `exit` to leave the development shell. For the
 next session, return to this folder and run `nix develop` again. Additional
 packages and corresponding environment updates will be announced with later
-labs. This flake does not configure CUDA or install PyTorch.
+labs. If you used the earlier setup, pull the course updates and leave/re-enter
+`nix develop` to obtain the new CPU PyTorch environment.
 
-Official reference: [nix develop](https://nix.dev/manual/nix/stable/command-ref/new-cli/nix3-develop).
+## Optional GPU work
+
+The supplied flake has a single CPU environment. For optional CUDA work, use
+[MIN JupyterHub](jupyterhub.md) or an available [Colab GPU runtime](colab.md).
+The local Nix environment does not need CUDA for any compulsory Lab 1 task.
+
+CPU packages can also require a long build if a binary substitute is unavailable;
+disabling CUDA does not guarantee a quick first setup. If the first setup
+would take too long, use MIN JupyterHub for class or the local CPU-wheel route
+on a compatible non-NixOS system. Keep the supplied lock file unchanged.
+
+Official references: [nix develop](https://nix.dev/manual/nix/stable/command-ref/new-cli/nix3-develop),
+[Nixpkgs configuration](https://nixos.org/manual/nixpkgs/stable/#chap-packageconfig).

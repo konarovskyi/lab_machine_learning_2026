@@ -18,15 +18,15 @@ servers, so your laptop does not need an NVIDIA GPU.
 5. Save the notebook on the server and download a copy to your laptop.
    No lab exercises or helper files are needed for this setup check.
 
-The instructor successfully ran the Lab 1 solution here on 16 October 2026.
-A separate PyTorch test also completed a CUDA matrix computation on a
-Quadro RTX 5000. This records one tested session; the same GPU or package
-version is not a requirement for students.
+On 16 October 2026 the instructor tested the previous NumPy lab here, and
+a separate PyTorch test completed a CUDA matrix computation on a Quadro RTX
+5000. These are observations from one session. For the revised PyTorch lab,
+run the current required CPU checks in your own session before class.
 
-The optional notebook check reports whether your current session has working
-PyTorch/CUDA. The GPU is a shared resource, so access is not a reservation.
-For Lab 1, use the CPU. Shut down GPU kernels when finished with later GPU
-work to release resources.
+The required notebook checks verify that PyTorch works on the CPU. The
+final optional cell only reports GPU availability. A GPU is a shared resource,
+so access is not a reservation. For Lab 1, use the CPU. Shut down GPU kernels when finished with
+later GPU work to release resources.
 
 If access fails, check your UHH login and tell the teaching team. If a course
 package is missing, send the error to the team so it can be coordinated with

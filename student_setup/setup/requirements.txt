@@ -1,6 +1,11 @@
-# Run from the course folder (containing setup/):
-# python -m pip install -r setup/requirements.txt
-# Standalone requirements for setup and the first lab.
+# From the course root, install CPU PyTorch first as described in setup/local.md.
+# Linux/Windows: python -m pip install "torch>=2.2,<3" --index-url https://download.pytorch.org/whl/cpu
+# macOS: python -m pip install "torch>=2.2,<3"
+# Then: python -m pip install -r setup/requirements.txt
+# A working hosted PyTorch installation does not need replacing.
+# NumPy is an environment dependency; Lab 1 uses PyTorch tensors throughout.
 numpy>=1.24
 matplotlib>=3.7
+torch>=2.2,<3
 jupyterlab>=4.0
+ipykernel>=6.0
