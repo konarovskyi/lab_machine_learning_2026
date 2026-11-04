@@ -13,8 +13,8 @@ laptop first. No local Git installation or Drive mount is needed.
 5. Save a copy of your notebook in Drive or download it using **File > Download >
    Download .ipynb**. Reopen it to check that you can retain your work.
 
-When Lab 1 is released, upload `lab_01.ipynb` in the same way and keep the
-exercise PDF open alongside it. The notebook needs no helper files. Its
+When Lab 1 is released, upload `lab_01.ipynb` in the same way. It contains all
+exercise statements and homework and needs no helper files. Its
 supplied plotting and training code is already in the notebook. Run cells
 in order, complete the marked tasks, and save your own copy with outputs.
 
@@ -48,3 +48,4 @@ and an available GPU. GPU availability varies.
 
 Official references: [Colab FAQ](https://research.google.com/colaboratory/faq.html),
 [file upload examples](https://colab.research.google.com/notebooks/io.ipynb).
+

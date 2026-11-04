@@ -1,0 +1,8 @@
+# Downloaded data and personal experiment files stay local.
+data/
+outputs/
+checkpoints/
+*.pt
+*.pth
+__pycache__/
+.ipynb_checkpoints/

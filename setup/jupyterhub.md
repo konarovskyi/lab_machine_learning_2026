@@ -28,10 +28,20 @@ final optional cell only reports GPU availability. A GPU is a shared resource,
 so access is not a reservation. For Lab 1, use the CPU. Shut down GPU kernels when finished with
 later GPU work to release resources.
 
-If access fails, check your UHH login and tell the teaching team. If a course
-package is missing, send the error to the team so it can be coordinated with
-MIN support. Do not replace the managed environment with a blanket package
-upgrade as part of this setup.
+If access fails, check your UHH login and tell the teaching team. For a missing
+or incompatible Lab 2 package, try the
+[targeted repair instructions](troubleshooting.md#lab-2-libraries-and-the-drawing-canvas)
+first. They include the instructor's successful torchvision command for
+PyTorch `2.12.0+cu130`, with a version check before installing.
+
+For the optional drawing canvas, install `anywidget` in a notebook cell with
+`%pip install "anywidget>=0.9.18,<1"`. If you see
+`Failed to load model class 'AnyModel' from module 'anywidget'`, save all open
+notebooks and use **File → Hub Control Panel → Stop My Server → Start My Server**.
+Reopen JupyterLab and hard-refresh the browser. Rerun completed setup, model,
+and training cells before trying the pad again. A kernel restart alone may
+not load the browser extension. If the repair fails, send the full error to
+the tutor and use Exercise 6's PNG/JPEG option or supplied examples.
 
 Official references (checked 16 October 2026):
 
@@ -39,3 +49,6 @@ Official references (checked 16 October 2026):
 - [Installed software; versions can change](https://support.min.uni-hamburg.de/help/en-us/26-software-and-libraries/91-important-software-packages-in-jupyter)
 - [Shared resources and session limits](https://support.min.uni-hamburg.de/help/en-us/27-system/28-limitations-in-jupyter)
 - [Installing additional packages](https://support.min.uni-hamburg.de/help/en-us/26-software-and-libraries/90-installing-software-packages-in-jupyter)
+
+
+Lab 2 restart instructions checked 3 November 2026: [MIN server restart](https://support.min.uni-hamburg.de/help/en-us/27-system/30-jupyterlab-instanz-neu-starten).

@@ -22,6 +22,9 @@
         numpy
         matplotlib
         torch
+        torchvision
+        pillow
+        anywidget
       ]);
     in
     {
@@ -36,3 +39,4 @@
       };
     };
 }
+

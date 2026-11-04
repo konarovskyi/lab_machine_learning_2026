@@ -1,0 +1,3 @@
+# Reuse the course environment. See ../setup/local.md for CPU PyTorch installation.
+# Run from the course root: python -m pip install -r lab_01/requirements.txt
+-r ../setup/requirements.txt

@@ -1,0 +1,10 @@
+# Reuse the course environment; first check imports in the notebook.
+# For a fresh local CPU install on Linux/Windows, install a compatible pair:
+# python -m pip install "torch>=2.2,<3" "torchvision>=0.17,<1" --index-url https://download.pytorch.org/whl/cpu
+# On macOS, use the same command without --index-url and its value.
+# Then, from the course root: python -m pip install -r lab_02/requirements.txt
+# Keep working MIN/Colab installations; do not run blanket upgrades there.
+torch>=2.2,<3
+torchvision>=0.17,<1
+Pillow>=9.1
+matplotlib>=3.7

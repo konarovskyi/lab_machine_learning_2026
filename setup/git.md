@@ -40,7 +40,7 @@ Open `my-work/check_setup.ipynb` in Jupyter. Follow your chosen setup route
 to install packages using the original `setup/requirements.txt`.
 
 When a lab is released, copy its **whole folder** before starting it.
-Lab 1 contains the exercise PDF, notebook, and requirements file; it needs
+Lab 1 contains the complete exercise notebook and requirements file; it needs
 no Python helper files. Once `lab_01` is available:
 
 ```bash
@@ -78,7 +78,7 @@ If the status lists changed files or an update fails, keep your work and
 ask for help with the full message. Do not use `git reset --hard` to fix it.
 
 You do not need `git commit` or `git push` for this workflow. Pulling updates
-does not submit homework; follow the submission instructions on each sheet.
+does not submit homework; follow the submission instructions in each notebook.
 
 ## Hosted environments
 
@@ -89,3 +89,4 @@ you can download and upload the required files without Git; see the
 Official command references: [clone](https://git-scm.com/docs/git-clone),
 [status](https://git-scm.com/docs/git-status),
 [pull](https://git-scm.com/docs/git-pull).
+

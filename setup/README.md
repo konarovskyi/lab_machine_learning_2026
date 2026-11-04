@@ -80,9 +80,48 @@ or the browser's HTML page.
 
 Before each class, obtain the latest materials as described in the Git guide.
 The corresponding lab folder will contain its exercise notebook and any
-companion files. Lab 1 comes with an exercise PDF and a notebook containing
-examples, short tasks, and supplied code. It needs no helper files. Follow
-the exercise numbers in order and keep your explanations with your code.
+companion files. Lab 1 has one notebook containing all exercise statements,
+examples, short tasks, supplied code, and homework. It needs no helper files.
+Follow the exercise numbers in order and keep your explanations with your code.
+
+## Preparing for Lab 2 when it is released
+
+Lab 2 adds `torchvision` for the MNIST dataset and Pillow for digit images.
+Keep your existing course environment and first run the import checks in the
+chosen lab notebook. Its preparation guide explains installation for each
+route and provides short examples of the functions used in the exercises.
+On MIN, use the targeted repair in the lab's troubleshooting section if
+`torchvision` fails: first check the installed PyTorch version, then install
+the matching torchvision build without replacing PyTorch. On Nix, update the course files and
+re-enter `nix develop`; the environment remains CPU-only with the same lock pin.
+
+Copy the whole `lab_02` folder into `my-work/lab_02`. Choose **one** of
+`lab_02_guided.ipynb` and `lab_02_independent.ipynb`, and keep
+`lab_02_support.py` beside it. Both contain the same project goals and exercise
+numbers; they differ in the amount of guidance. Both include student-written
+model and evaluation code, an architecture-design homework task, and a
+small-noise experiment. Colab users upload the chosen
+notebook and helper file to the runtime. A fresh Colab session needs the helper
+uploaded again, and your completed notebook should be downloaded for safekeeping.
+
+Allow time before class for the initial MNIST download and the suggested
+20–30 minute preparation. The notebook can use CUDA when available and falls
+back to CPU. GPU access is optional; no new CUDA installation is required.
+
+Exercise 6 has an optional drawing canvas using `anywidget`. If needed, MIN,
+local Python, and Colab users can run `%pip install "anywidget>=0.9.18,<1"`
+in a notebook cell. The Nix environment already includes the widget. For MIN's
+`AnyModel` error, save all notebooks, stop and start your server through
+**File → Hub Control Panel**, then reopen and hard-refresh JupyterLab.
+Follow the complete restart steps linked below. The notebook explains how to record
+the drawing and prediction as ordinary saved output. Its image-file route
+works without this optional widget.
+
+If imports fail or the canvas reports
+`Failed to load model class 'AnyModel' from module 'anywidget'`, see the
+[Lab 2 troubleshooting steps](troubleshooting.md#lab-2-libraries-and-the-drawing-canvas).
+The widget error concerns its browser component; reinstalling PyTorch does
+not address it. The PNG/JPEG route lets you continue the exercise.
 
 ## If something fails
 
@@ -92,3 +131,6 @@ installation becomes difficult, use MIN JupyterHub for the first class.
 
 Bring your laptop and charger. For a hosted route, check beforehand that you
 can sign in and use the university network from that laptop.
+
+
+

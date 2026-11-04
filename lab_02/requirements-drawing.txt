@@ -1,0 +1,5 @@
+# Optional: drawing a digit directly in the Exercise 6 notebook canvas.
+# The core lab and the PNG/JPEG upload route do not need this package.
+# This file does not replace or upgrade PyTorch or torchvision.
+# From the course root: python -m pip install -r lab_02/requirements-drawing.txt
+anywidget>=0.9.18,<1
